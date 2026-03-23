@@ -1,0 +1,317 @@
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 400;
+	src:
+		local("Unbounded-Regular"),
+		url(../fonts/Unbounded-Regular.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 300;
+	src:
+		local("Unbounded-Light"),
+		url(../fonts/Unbounded-Light.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 250;
+	src:
+		local("Unbounded-ExtraLight"),
+		url(../fonts/Unbounded-ExtraLight.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 500;
+	src:
+		local("Unbounded-Medium"),
+		url(../fonts/Unbounded-Medium.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 600;
+	src:
+		local("Unbounded-SemiBold"),
+		url(../fonts/Unbounded-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 700;
+	src:
+		local("Unbounded-Bold"),
+		url(../fonts/Unbounded-Bold.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Unbounded;
+	font-weight: 900;
+	src:
+		local("Unbounded-Black"),
+		url(../fonts/Unbounded-Black.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Inter;
+	font-weight: 400;
+	src:
+		local("Inter Regular"),
+		url(../fonts/Inter-Regular.woff2) format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Noto Sans";
+	font-weight: 400;
+	src:
+		local("NotoSans Regular"),
+		url(../fonts/NotoSans-Regular.woff2) format("woff2");
+}
+
+@import "_slick";
+@import "_slick-theme";
+@import "_null";
+@import "_var";
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+	background-color: var(--fon);
+	background-repeat: no-repeat;
+	background-position: center top;
+	// background-size: cover;
+	background-image: url("../img/bg/bg_x1_1.avif");
+	color: var(--text);
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 137%;
+	color: #fff;
+	// min-height: 100%;
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.wrapper {
+	height: 100vh;
+	min-height: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1228px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 64px 0;
+}
+
+.title {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 133%;
+	text-align: center;
+	color: #c8d8ff;
+	margin-bottom: 32px;
+}
+
+.bg-border {
+	border-radius: 8px;
+	border: 2px solid transparent;
+	background-image: linear-gradient(to right, rgb(187 210 224 / 0%), rgb(255 255 255), rgb(187 210 224 / 0%)),
+		linear-gradient(to bottom, rgb(255 255 255 / 0%), rgb(255 255 255), rgb(255 255 255 / 0%)),
+		linear-gradient(to left, rgb(255 255 255 / 0%), rgb(255 255 255), rgb(255 255 255 / 0%)),
+		linear-gradient(to top, rgb(255 255 255 / 0%), rgb(255 255 255), rgb(255 255 255 / 0%));
+	background-origin: border-box;
+	background-size:
+		100% 2px,
+		2px 100%,
+		100% 2px,
+		2px 100%;
+	background-position:
+		top left,
+		top right,
+		bottom right,
+		bottom left;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(16px);
+}
+.ugol-top {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 19px;
+		height: 18px;
+		background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 1H1.5V17' stroke='white' stroke-width='2' stroke-linecap='square' /%3E%3C/svg%3E");
+		z-index: 9;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 19px;
+		height: 18px;
+		background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 17L17.5 1L1.5 0.999999' stroke='white' stroke-width='2' stroke-linecap='square' /%3E%3C/svg%3E");
+		z-index: 9;
+	}
+}
+.bg-ugol {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 19px;
+		height: 18px;
+		background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 17H1.5V1' stroke='white' stroke-width='2' stroke-linecap='square' /%3E%3C/svg%3E");
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 19px;
+		height: 18px;
+		background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 1L17.5 17L1.5 17' stroke='white' stroke-width='2' stroke-linecap='square' /%3E%3C/svg%3E");
+	}
+}
+
+.button {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 110%;
+	text-align: center;
+	color: #fff;
+	&:hover {
+		cursor: pointer;
+	}
+}
+@media (max-width: 1920px) {
+	body {
+		background-image: image-set(
+			url("../img/bg/bg.avif") type("image/avif"),
+			url("../img/bg/bg.webp") type("image/webp"),
+			url("../img/bg/bg.jpg")
+		);
+	}
+}
+@media (max-width: 1030px) {
+	body {
+		background-image: url("../img/bg/bg-1000.jpg");
+	}
+	.title {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 133%;
+	}
+}
+@media (max-width: 900px) {
+	section {
+		padding: 32px 0;
+	}
+	.title {
+		font-size: 50px;
+		line-height: 70px;
+	}
+}
+
+@media (max-width: 800px) {
+	.title {
+		font-size: 40px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 670px) {
+	.title {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.button {
+		font-size: 16px;
+		line-height: 137%;
+	}
+	.container {
+		padding: 0 24px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding: 0 16px;
+	}
+}
+
+@media (max-width: 450px) {
+	.button {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+@import "_header";
+@import "_promo";
+@import "_information";
+@import "_program";
+@import "_organizers";
+@import "_will-do";
+@import "_tab";
+@import "_direction";
+@import "_disciplines";
+@import "_learn";
+@import "_work";
+@import "_teachers";
+@import "_sample";
+@import "_license";
+@import "_to-enroll";
+@import "_price";
+@import "_advantages";
+@import "_faq";
+@import "_form-questions";
+@import "_commission";
+@import "_footer";
+@import "_modal";
+@import "_autofill";
+@import "_graduates";

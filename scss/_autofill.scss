@@ -1,0 +1,35 @@
+/// Disable auto fill background color
+
+@mixin disableAutoFill {
+	// -webkit-box-shadow: 0 0 0px 9999px white inset !important;
+}
+
+/// Change background color
+
+@mixin backgroundColorAutoFill($backgroundColor) {
+	-webkit-box-shadow: 0 0 0px 9999px $backgroundColor inset !important;
+}
+
+/// Change text color
+
+@mixin textColorAutoFill($color) {
+	-webkit-text-fill-color: $color !important;
+}
+
+/// Change background color on hover
+
+@mixin hoverBackgroundColorAutoFill($backgroundColor) {
+	&:hover,
+	&:focus {
+		-webkit-box-shadow: 0 0 0px 9999px $backgroundColor inset !important;
+	}
+}
+
+/// Change text color on hover
+
+@mixin hoverTextColorAutoFill($color) {
+	&:hover,
+	&:focus {
+		-webkit-text-fill-color: $color !important;
+	}
+}

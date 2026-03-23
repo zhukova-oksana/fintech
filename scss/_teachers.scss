@@ -1,0 +1,212 @@
+.teachers {
+	&__container {
+		max-width: 100%;
+		padding: 0;
+	}
+	&__title {
+	}
+	&__row {
+		// display: flex;
+		// gap: 24px;
+		margin-bottom: 32px;
+		.slick-dots {
+			bottom: -57px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				button {
+					border-radius: 100px;
+					width: 8px;
+					height: 8px;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					&::before {
+						border-radius: 100px;
+						width: 8px;
+						height: 8px;
+						opacity: 1;
+						background: #fff;
+						font-size: 0;
+					}
+				}
+				&.slick-active {
+					button {
+						width: 24px;
+						&::before {
+							width: 24px;
+							background: #c8d8ff;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__arrow,
+	&__arrow2 {
+		text-align: center;
+		display: flex;
+		gap: 240px;
+		justify-content: center;
+		.btn {
+			background: none;
+			width: 32px;
+			height: 32px;
+			border: 2px solid #fff;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 99999;
+			position: relative;
+			&:hover {
+				background: rgba(82, 54, 146, 0.4);
+				border-color: rgba(255, 255, 255, 0.25);
+			}
+			&:active {
+				background-color: rgba(82, 54, 146, 0.6);
+				border-color: rgba(255, 255, 255, 0.25);
+			}
+		}
+	}
+	&__item {
+		width: 572px;
+		min-height: 584px;
+		padding: 24px;
+		backdrop-filter: blur(24px);
+		background-color: rgba(0, 0, 0, 0.25);
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-between;
+		margin-right: 24px;
+	}
+	&__top {
+		margin-bottom: 24px;
+	}
+	&__info {
+		display: flex;
+		align-items: start;
+		gap: 16px;
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		background: url("../img/teachers/line.png") no-repeat center bottom;
+	}
+	&__image {
+		min-width: 48px;
+		max-width: 48px;
+		border-radius: 50%;
+	}
+	&__fio {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 171%;
+		color: #fff;
+		span {
+			display: block;
+		}
+	}
+	&__text {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 143%;
+		color: #c8d8ff;
+		max-width: 385px;
+	}
+	&__list {
+		padding-left: 24px;
+		background: url("../img/teachers/line.png") no-repeat center bottom;
+		&:not(:last-child) {
+			margin-bottom: 24px;
+			padding-bottom: 24px;
+		}
+		&:last-child {
+			background: none;
+		}
+	}
+	&__li {
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: #fff;
+		list-style: disc;
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+	&__button {
+		width: 327px;
+		height: 50px;
+		background: url("../img/teachers/button.svg") no-repeat 0 0;
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 137%;
+		text-align: center;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 949px) {
+	.teachers {
+		&__item {
+			margin: 0 auto;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.teachers {
+		&__item {
+			width: 96%;
+		}
+	}
+}
+@media (max-width: 570px) {
+	.teachers {
+		&__item {
+			min-height: 607px;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.teachers {
+		&__item {
+			min-height: 627px;
+		}
+	}
+}
+
+@media (max-width: 497px) {
+	.teachers {
+		&__item {
+			min-height: 675px;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.teachers {
+		&__item {
+			min-height: 700px;
+		}
+	}
+}
+
+@media (max-width: 455px) {
+	.teachers {
+		&__item {
+			min-height: 723px;
+		}
+	}
+}

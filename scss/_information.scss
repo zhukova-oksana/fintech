@@ -1,0 +1,47 @@
+.information {
+	background: rgba(34, 27, 63, 0.7);
+	padding-top: 0;
+	padding-bottom: 0;
+	&__container {
+		padding-top: 4px;
+		padding-bottom: 24px;
+	}
+	&__list {
+		display: flex;
+		gap: 16px;
+	}
+	&__li {
+		flex: 1 1 216px;
+		max-width: 216px;
+		background-image: url("data:image/svg+xml,%3Csvg width='195' height='32' viewBox='0 0 195 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.5 28.5L28.1464 28.8536L28.2929 29H28.5V28.5ZM188.833 28.5C188.833 29.9728 190.027 31.1667 191.5 31.1667C192.973 31.1667 194.167 29.9728 194.167 28.5C194.167 27.0272 192.973 25.8333 191.5 25.8333C190.027 25.8333 188.833 27.0272 188.833 28.5ZM1 1L0.646447 1.35355L28.1464 28.8536L28.5 28.5L28.8536 28.1464L1.35355 0.646447L1 1ZM28.5 28.5V29H191.5V28.5V28H28.5V28.5Z' fill='url(%23paint0_linear_2001_34)' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2001_34' x1='2' y1='2' x2='96' y2='28.5' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0' /%3E%3Cstop offset='1' stop-color='white' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+		background-position: left 4px;
+		background-repeat: no-repeat;
+		padding-top: 48px;
+		padding-left: 32px;
+		position: relative;
+		&--big {
+			flex: 1 1 520px;
+			max-width: 520px;
+		}
+		span {
+			display: block;
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 143%;
+			color: #fff;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.information {
+		&__list {
+			flex-direction: column;
+		}
+		&__li {
+			flex: 1 1 auto;
+		}
+	}
+}

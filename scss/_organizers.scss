@@ -1,0 +1,54 @@
+.organizers {
+	&__container {
+	}
+	&__title {
+		text-align: left;
+	}
+	&__row {
+		display: flex;
+		gap: 24px;
+	}
+	&__item {
+		flex: 1 1 572px;
+	}
+	&__text {
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: #fff;
+		margin-bottom: 24px;
+	}
+	&__info {
+		backdrop-filter: blur(24px);
+		background-color: rgba(0, 0, 0, 0.25);
+		border-radius: 8px;
+		padding: 21px;
+	}
+	&__logo {
+		margin-bottom: 16px;
+	}
+	&__paragraph {
+		p {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 143%;
+			color: #fff;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.organizers {
+		&__row {
+			flex-direction: column;
+		}
+		&__item {
+			flex: 1 1 auto;
+		}
+	}
+}
